@@ -1,0 +1,25 @@
+main {
+  background-color: #2b2b30;
+}
+
+.goods-item {
+  margin-top: 30px;
+  height: 300px;
+  width: 230px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.goods-item h3 {
+  font-size: 20px;
+}
+
+.goods-item p {
+  font-size: 20px;
+}
+
+.goods-item img {
+  margin-top: 25px;
+  height: 150px;
+  width: 150px;
+}
