@@ -2,7 +2,7 @@ main {
   background-color: #2b2b30;
 }
 
-.goods-item {
+.product {
   margin-top: 30px;
   height: 300px;
   width: 230px;
@@ -10,15 +10,15 @@ main {
   background-color: #f8f9fa;
 }
 
-.goods-item h3 {
+.product h3 {
   font-size: 20px;
 }
 
-.goods-item p {
+.product p {
   font-size: 20px;
 }
 
-.goods-item img {
+.product img {
   margin-top: 25px;
   height: 150px;
   width: 150px;
