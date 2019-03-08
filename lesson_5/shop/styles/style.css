@@ -1,0 +1,28 @@
+main {
+  background-color: #2b2b30;
+  height: 800px;
+}
+
+.product-item {
+  margin: 10px 10px;
+}
+
+.cart-menu {
+  color: white;
+}
+
+.cart {
+  /*height: 100%;*/
+}
+
+.card-header h5{
+  float: left;
+}
+
+.card-header a{
+  float: right;
+}
+
+.cartBtn {
+  float: right;
+}
