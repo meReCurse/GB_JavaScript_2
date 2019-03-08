@@ -1,6 +1,9 @@
 main {
   background-color: #2b2b30;
-  height: 800px;
+}
+
+.products {
+  margin-right: 0;
 }
 
 .product-item {
@@ -12,7 +15,13 @@ main {
 }
 
 .cart {
-  /*height: 100%;*/
+  position: relative;
+  z-index: 100;
+  right: 0;
+  overflow: auto;
+  float: right;
+  width: 500px;
+  margin-left: 0;
 }
 
 .card-header h5{

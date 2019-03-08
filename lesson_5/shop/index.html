@@ -43,11 +43,9 @@
       <div class="card">
         <div class="card-header">
           <h5>Корзина</h5>
-          <a href="#" class="btn btn-primary cartBtn" @click="makeOrder()">Купить</a>
-          <a href="#" class="btn btn-danger cartBtn" @click="nullifyBasket()">Очистить</a>
         </div>
         <div v-if="isCartFill()">
-          <div class="card-body row">
+          <div class="card-body">
             <div class="card product-item" v-for="product of basket.contents" :key="product.id_product">
               <div class="card-body">
                 <h5 class="card-title">{{product.product_name}}</h5>
@@ -56,6 +54,8 @@
                 <a href="#" class="btn btn-secondary remove-btn" @click="removeProduct(product)">Удалить</a>
               </div>
             </div>
+            <a href="#" class="btn btn-primary cartBtn" @click="makeOrder()">Купить</a>
+            <a href="#" class="btn btn-danger cartBtn" @click="nullifyBasket()">Очистить</a>
           </div>
         </div>
         <span v-else>Нет данных</span>

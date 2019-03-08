@@ -8,5 +8,15 @@
     "id_product": 2,
     "product_name": "Геймпад",
     "price": 7000
+  },
+  {
+    "id_product": 3,
+    "product_name": "Коврик для мыши",
+    "price": 2000
+  },
+  {
+    "id_product": 2,
+    "product_name": "Микрофон",
+    "price": 5000
   }
 ]
