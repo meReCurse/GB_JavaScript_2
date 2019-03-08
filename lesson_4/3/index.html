@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- START REGISTRATION FORM
+    ################################ -->
+    <div class="container col-sm-6">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Форма обратной связи</legend>
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Имя</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control form-control" id="name" placeholder="Имя" name="name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone-number" class="col-sm-2 control-label">Телефон</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="phone-number" placeholder="Телефон" name="phoneNumber">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="e-mail" class="col-sm-2 control-label">E-Mail</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="e-mail" placeholder="E-Mail" name="e-mail">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="FormControlTextarea1" class="col-sm-2 control-label">Сообщение</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="FormControlTextarea1" rows="3" name="text"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success">Отправить</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!-- END REGISTRATION FORM-->
+
+    <!-- START SCRIPTS
+    ######################-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <!-- Validation Script -->
+    <script src="validation.js"></script>
+    <!-- END SCRIPTS -->
+  </body>
+</html>
