@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="packages/bootstrap4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>js2Shop</title>
+</head>
+<body>
+<div id="app">
+  <header>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-text">
+        <img src="images/logo.png" alt="">
+      </span>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2"
+               type="search"
+               placeholder="Search"
+               aria-label="Search"
+               v-model="searchLine">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="filterGoods()">Search</button>
+      </form>
+      <div class="cart-menu">
+        Количество товаров: <span class="col" id="total-quantity">{{basket.countGoods}}</span>
+        Стоимость: <span class="col" id="total-price">{{basket.amount}}</span>
+        <button type="button" class="btn btn-secondary" id="cart-button" @click="isVisibleCart = !isVisibleCart">
+          Корзина
+        </button>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- BASKET -->
+    <div v-show="isVisibleCart" class="cart">
+      <div class="card">
+        <div class="card-header">
+          <h5>Корзина</h5>
+        </div>
+        <div v-if="isCartFill()">
+          <div class="card-body">
+            <div class="card product-item" v-for="product of basket.contents" :key="product.id_product">
+              <div class="card-body">
+                <h5 class="card-title">{{product.product_name}}</h5>
+                <p class="card-text">цена: {{product.price}}&nbspруб.</p>
+                <p class="card-text">количество: {{product.quantity}}</p>
+                <a href="#" class="btn btn-secondary remove-btn" @click="removeProduct(product)">Удалить</a>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary cartBtn" @click="makeOrder()">Купить</a>
+            <a href="#" class="btn btn-danger cartBtn" @click="nullifyBasket()">Очистить</a>
+          </div>
+        </div>
+        <span v-else>Нет данных</span>
+      </div>
+    </div>
+    <!-- END BASKET -->
+  </header>
+
+  <main class="container">
+    <div class="row products">
+      <!-- Цикл по товарам -->
+      <div class="card product-item"
+           style="width: 16rem;"
+           v-for="product of products"
+           :key="product.id_product"
+           v-show="product.shown">
+        <img :src="imgProduct" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{product.product_name}}</h5>
+          <p class="card-text">{{product.price}}&nbspруб.</p>
+          <a href="#" class="btn btn-primary buy-btn" @click="addProduct(product)">Добавить</a>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </main>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="packages/bootstrap4/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="packages/bootstrap4/js/popper.min.js"></script>
+  <script src="packages/bootstrap4/js/bootstrap.min.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
