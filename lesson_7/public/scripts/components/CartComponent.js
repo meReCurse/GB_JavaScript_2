@@ -50,7 +50,15 @@ Vue.component('cart', {
           .then(data => {
             if (data.result === 1 ){
               this.basket.contents.splice(this.basket.contents.indexOf(find), 1);
-              this.updateBasket()
+              if (this.basket.contents.length) {
+                this.updateBasket();
+              } else {
+                this.basket = {
+                  "amount": 0,
+                  "countGoods": 0,
+                  "contents": []
+                }
+              }
             }
           })
       }

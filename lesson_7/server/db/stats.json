@@ -138,5 +138,130 @@
     "product": "Мышка",
     "action": "add",
     "time": "Mar 15th 19, 1:12:21 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "change",
+    "time": "Mar 15th 19, 2:25:23 pm"
+  },
+  {
+    "product": "all",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:25:30 pm"
+  },
+  {
+    "product": "Геймпад",
+    "action": "add",
+    "time": "Mar 15th 19, 2:26:29 pm"
+  },
+  {
+    "product": "Наушники",
+    "action": "add",
+    "time": "Mar 15th 19, 2:28:21 pm"
+  },
+  {
+    "product": "all",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:28:30 pm"
+  },
+  {
+    "product": "Геймпад",
+    "action": "add",
+    "time": "Mar 15th 19, 2:31:04 pm"
+  },
+  {
+    "product": "Геймпад",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:36:05 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "add",
+    "time": "Mar 15th 19, 2:36:11 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:36:14 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "add",
+    "time": "Mar 15th 19, 2:37:51 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "add",
+    "time": "Mar 15th 19, 2:37:56 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:37:59 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:38:05 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "add",
+    "time": "Mar 15th 19, 2:41:14 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:41:17 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "add",
+    "time": "Mar 15th 19, 2:41:21 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "change",
+    "time": "Mar 15th 19, 2:41:22 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "change",
+    "time": "Mar 15th 19, 2:41:25 pm"
+  },
+  {
+    "product": "Коврик для мыши",
+    "action": "remove",
+    "time": "Mar 15th 19, 2:41:26 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "add",
+    "time": "Mar 15th 19, 2:41:30 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "change",
+    "time": "Mar 15th 19, 2:41:30 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "change",
+    "time": "Mar 15th 19, 2:41:31 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "change",
+    "time": "Mar 15th 19, 2:41:34 pm"
+  },
+  {
+    "product": "Ноутбук",
+    "action": "change",
+    "time": "Mar 15th 19, 2:41:35 pm"
+  },
+  {
+    "product": "Мышка",
+    "action": "add",
+    "time": "Mar 15th 19, 2:41:38 pm"
   }
 ]
