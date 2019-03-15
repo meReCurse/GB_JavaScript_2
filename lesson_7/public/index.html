@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js2Shop</title>
+
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div id="app">
+
+    <header>
+      <div class="nav">
+        <img src="images/logo.png" alt="">
+        <product-filter></product-filter>
+        <cart ref="cart"></cart>
+      </div>
+    </header>
+
+    <main>
+      <error ref="error"></error>
+      <products ref="prods"></products>
+    </main>
+    <footer></footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="scripts/components/ErrorComponent.js"></script>
+  <script src="scripts/components/CartComponent.js"></script>
+  <script src="scripts/components/ProductsComponent.js"></script>
+  <script src="scripts/components/FilterComponent.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
